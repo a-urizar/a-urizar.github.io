@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Proyecto integrador - Argentina Programa 4.0</title>
+    <link rel="stylesheet" href="assets/css/style_portada.css">
+</head>
+<body>
+
+    <section>
+    <img src="assets/images/portada/sol.svg" id="sol">
+    <img src="assets/images/portada/hombreasoma.png" id="asoma">
+    <img src="assets/images/portada/estrellas.png" id="estrellas">
+    <img src="assets/images/portada/luna.png" id="luna">
+    <img src="assets/images/portada/mont_back.png" id="mont_back">
+    <img src="assets/images/portada/mont_front.png" id="mont_front">
+    <img src="assets/images/portada/paisaje.svg" id="paisaje">
+    
+    
+    
+
+    <h2 id="text"> CV <span>4.0</span> </h2>
+    <a href="#" id="btn">Play</a> 
+    <a href="#" id="btncv"> Seguir</a>
+    <a href="index_cv.html" id="vercv"> Ver CV</a>
+    
+
+</section>
+
+
+
+
+
+<div id="sonidos"><audio src="sonido/sonido.wav" autoplay></audio></div>
+
+
+
+<script src="assets/anime/anime.min.js"></script>
+<script src= "assets/Javascript/anime_btn_play.js"></script>
+<script src="assets/Javascript/anime_btn_seguir.js"></script>
+
+<!--   El  siguienyte codigo comentado lo puse en el archivo anime_btn_play.js 
+       pór una cuestion de organizacion, igualmente deje el codigo comentado en el html para 
+       realizar una comparacion 
+<script>
+
+    var animation=anime.timeline({
+        autoplay:false
+    });
+
+    animation
+    .add({
+        targets:'#btn',
+        top:'1500px',
+        duration: 500,
+        easing: 'easeInOutSine'
+
+    })
+    
+
+
+    .add({
+        targets:'#estrellas',
+        top:'0px',
+        duration: 1000,
+        easing: 'easeInOutSine'
+
+    })
+
+    .add({
+        targets:'#mont_back',
+        top:'0px',
+        duration: 1000,
+        easing: 'easeInOutSine'
+
+    })
+    .add({
+        targets:'#luna',
+        top:'0px',
+        duration: 1000,
+        easing: 'easeInOutBack'
+
+    })
+    
+    .add({
+        targets:'#mont_front',
+        top:'0px',
+        duration: 1000,
+        easing: 'easeInOutSine'
+
+    })
+    .add({
+        targets:'#text',
+    
+        duration: 1000,
+        marginRight: 0,
+        easing: 'easeInOutBack'
+
+    })
+    
+    .add({
+        targets:'#btn',
+        top:'50%',
+        duration: 1000,
+        easing: 'easeInOutBack'
+
+    })
+
+    .add({
+        targets:'#btncv',
+        top:'100px',
+        duration: 1000,
+        easing: 'easeInOutSine'
+
+    })
+    document.querySelector('#btn').onclick=animation.play;
+</script>
+-->
+
+<!--El  siguienyte codigo comentado lo puse en el archivo anime_btn_cv.js 
+       pór una cuestion de organizacion, igualmente deje el codigo comentado en el html para 
+       realizar una comparacion
+<script>
+
+    var animation2=anime.timeline({
+        autoplay:false
+    });
+
+    animation2
+
+
+    
+    .add({
+        targets:'#luna',
+        top:'-1000px',
+        duration: 1000,
+        easing: 'easeInOutBack'
+
+    })
+    
+    .add({
+        targets:'#estrellas',
+        top:'-1000px',
+        duration: 1000,
+        easing: 'easeInOutSine'
+        
+
+    })
+
+    .add({
+        targets:'#mont_back',
+        top:'-1000px',
+        duration: 1000,
+        easing: 'easeInOutSine'
+
+    })
+
+    .add({
+        targets:'#mont_front',
+        top:'-1000px',
+        duration: 1000,
+        easing: 'easeInOutSine'
+
+    })
+
+    
+    
+    .add({
+        targets:'#btn',
+        top:'-1000px',
+        duration: 500,
+        easing: 'easeInOutSine'
+
+    })
+    
+    .add({
+        targets:'#btncv',
+        top:'-1000px',
+        duration: 1000,
+        easing: 'easeInOutSine'
+
+    })
+
+    
+    
+    
+    
+    .add({
+        targets:'#text',
+    
+        duration: 500,
+        top:'500px',
+        easing: 'easeInOutBack'
+
+    })
+
+
+    .add({
+        targets:'#text',
+    
+        duration: 3000,
+        top:'-400px',
+        easing: 'easeInOutBack'
+
+    })
+
+    .add({
+        targets:'#text',
+    
+        duration: 1000,
+        top:'-1000px',
+        easing: 'easeInOutBack'
+
+    })
+
+    .add({
+        targets:'#sol',
+    
+        duration: 1000,
+        top:'0px',
+        easing: 'easeInOutBack'
+
+    })    
+
+    .add({
+        targets:'#sol',
+    
+        duration: 1000,
+        top:'1500px',
+        easing: 'easeInOutBack'
+
+    }) 
+    
+    .add({
+        targets:'#asoma',
+    
+        duration: 4000,
+        top:'-50px',
+        easing: 'easeInOutSine'
+
+    })
+
+    .add({
+        targets:'#asoma',
+    
+        duration: 500,
+        top:'1599px',
+        easing: 'easeInOutSine'
+
+    })
+
+    .add({
+        targets:'#paisaje',
+    
+        duration: 1000,
+        top:'0px',
+        easing: 'easeInOutSine'
+
+    })
+
+    
+    .add({
+        targets:'#vercv',
+        top:'80px',
+        duration: 1000,
+        easing: 'easeInOutSine'
+
+    })
+
+    
+    document.querySelector('#btncv').onclick=animation2.play;
+</script>
+
+-->
+</body>
+</html>
