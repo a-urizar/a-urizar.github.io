@@ -116,7 +116,10 @@ header{
     padding-top: 100px;
     padding-bottom: 100px;
     /*background: var(--main_color-secundary);*/
-     background: var(--main_color-cuaternary);
+     background-color: var(--main_color-cuaternary);
+flex-wrap: wrap;
+
+
 }
 
 .cover{
@@ -126,6 +129,7 @@ header{
     display: flex;
     align-items: center;
     padding: 0px 20px;
+    background: var(--main_color-cuaternary);
 }
 
 .text__cover{
@@ -167,6 +171,7 @@ header{
 
 .image__cover{
     width: 100%;
+    background: var(--main_color-cuaternary);
 }
 
 .image__cover img{
@@ -297,4 +302,57 @@ text-align: center;
 .text_anima{
     text-align: center;
     margin-top: 50px;
+}
+
+/*prueba de estilos*/
+
+.homer{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.in-flex{
+    flex: 1;
+    min-width: 250px;
+}
+
+.in-flex:first-child{
+
+    flex:2;
+    padding: 25px;
+    
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.in-flex div{
+    padding: 25px;
+    
+    margin:20px;
+}
+
+@media screen and (max-width:800px){
+
+    .image__cover{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .cover{
+align-items: center;
+    }
+}
+
+.div__offset{
+
+    display: none;
+}
+
+@media screen and (max-width:800px){
+
+    .div__offset{
+display: block;
+    }
 }
